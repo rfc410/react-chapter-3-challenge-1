@@ -1,1 +1,70 @@
-// TODO
+.contentContainer {
+  margin: 0 auto;
+  max-width: 1120px;
+
+  img {
+    display: block;
+    margin: 5rem 0 4rem;
+  }
+}
+
+.posts {
+  margin-bottom: 4rem;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      margin-top: .5rem;
+    }
+
+    strong {
+      display: block;
+      color: var(--heading);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 2.125rem;
+    }
+
+    .postFooter {
+      display: flex;
+      align-items: center;
+
+      margin-top: 1.5rem;
+
+      color: var(--info);
+      font-size: .875rem;
+
+      div {
+        display: flex;
+        align-items: center;
+
+        & + div {
+          margin-left: 1.5rem;
+        }
+
+        .postFooterIcon {
+          margin-right: 0.5rem;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
+.btnLoadMore {
+  background-color: transparent;
+
+  border: 0;
+
+  color: var(--highlight);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
